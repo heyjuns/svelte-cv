@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Border from './border.svelte';
-
 	import Title from './title.svelte';
 	export let title: string;
 	export let datas: any;
@@ -9,21 +7,20 @@
 <section class="">
 	<Title {title} />
 
-	{#each datas as data}
-		<section class="my-4">
-			<div class="mb-2">
-				<h2 class="text-xl font-semibold text-gray-700 leading-6">{data.title}</h2>
-				<div class="flex flex-row justify-between place-items-center text-gray-600">
-					<p class="text-lg">{data.location}</p>
-					<p class="text-xs">{data.duration}</p>
-				</div>
-			</div>
-			<div>
-				<p class="text-gray-600 font-light">{data.description}</p>
-			</div>
-		</section>
-		<Border />
-	{/each}
+	<ol class="relative border-l border-slate-700 ">
+		{#each datas as data}
+			<li class="mb-10 ml-4">
+				<div class="absolute w-3 h-3 bg-slate-700 rounded-full mt-1.5 -left-1.5 border" />
+				<time class="mb-1 text-sm font-light leading-none text-slate-600 ">{data.duration}</time>
+				<h3 class="text-lg font-semibold text-slate-700">
+					{data.title}
+				</h3>
+				<p class="mb-4 font-normal text-slate-600 ">
+					{data.description}
+				</p>
+			</li>
+		{/each}
+	</ol>
 </section>
 
 <style>

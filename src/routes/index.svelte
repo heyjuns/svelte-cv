@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Border from './border.svelte';
+import Datalist from './datalist.svelte';
 	import Profile from './profile.svelte';
 	import Skills from './skills.svelte';
 	import Timeline from './timeline.svelte';
@@ -25,6 +26,11 @@
 			<Timeline title="WORKS" datas={data.works} />
 			<Timeline title="EDUCATION" datas={data.educations} />
 			<Timeline title="FREELANCE" datas={data.freelance} />
+
+      <!-- <Datalist title="WORKS" datas={data.works} />
+			<Datalist title="EDUCATION" datas={data.educations} />
+			<Datalist title="FREELANCE" datas={data.freelance} /> -->
+
 
 			<div class="space-y-10 md:space-y-4">
 				<Skills title="TECH SKILLS" skills={data.tech_skills} />
