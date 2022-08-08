@@ -15,6 +15,5 @@
 				{skill}
 			</p>
 		{/each}
-
 	</div>
 </section>

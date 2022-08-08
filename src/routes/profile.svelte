@@ -23,7 +23,9 @@
 				</p>
 			</div>
 
-			<div class="flex flex-col md:flex-row justify-center place-items-center space-x-0 md:space-x-4 space-y-2">
+			<div
+				class="flex flex-col md:flex-row justify-center place-items-center space-x-0 md:space-x-4 space-y-2"
+			>
 				<div class="flex place-items-center flex-grow">
 					<a
 						href="mailto:{biodata.email}"
