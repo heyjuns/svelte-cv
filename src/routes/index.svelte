@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Timeline from './timeline.svelte';
+
 	let data: any;
-
-
 	onMount(async () => {
 		const res = await fetch('https://juanda-backend.herokuapp.com/');
 		data = await res.json();
@@ -17,15 +16,34 @@
 
 <section>
 	{#if data}
-		<figure>
-			<div class="text-center space-y-4">
+
+		<figure class="md:flex rounded-xl p-8 md:p-0 bg-white shadow-lg ">
+			<img
+				class="w-48 h-48 object-cover md:object-cover md:w-48 md:h-auto md:rounded-r-none md:rounded-l-xl :md rounded-full mx-auto"
+				src="./avatar_edit.jpg"
+				alt=""
+			/>
+			<div class="pt-6 md:p-8 text-center md:text-left space-y-4 text-gray-600">
+				<blockquote>
+					<p class="font-light">
+						{data.biodata.second_summary}
+					</p>
+				</blockquote>
 				<div>
-					<h1 class="text-5xl font-bold text-gray-700">{data.biodata.name}</h1>
-					<p class="text-3xl text-gray-600">{data.position} - {data.works[0].location}</p>
+					<p class="font-bold text-gray-700">{data.biodata.name}</p>
+					<p class="">{data.biodata.position}, {data.works[0].location}</p>
 				</div>
-				<p class="text-lg text-gray-600">{data.summary}</p>
+
+        <div class="flex flex-row space-x-3 justify-center">
+					{#each data.social_media as item}
+						<a href={item.url} target="_blank"> {item.name}</a>
+					{/each}
+				</div>
 			</div>
 		</figure>
+
+
+
 		<section class="grid md:grid-cols-2 space-y-4 md:space-y-0 md:gap-16 mt-20">
 			<Timeline title="WORKS TIMELINE" datas={data.works} />
 			<Timeline title="EDUCATION TIMELINE" datas={data.educations} />
