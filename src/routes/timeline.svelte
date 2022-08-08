@@ -4,7 +4,7 @@
 </script>
 
 <div>
-	<h1 class="font-bold text-3xl text-gray-700">{title}</h1>
+	<h1 class="font-bold text-3xl text-gray-700 tracking-wider underline">{title}</h1>
 
 	{#each datas as data}
 		<section class="my-4">
