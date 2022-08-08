@@ -6,7 +6,7 @@
 	export let datas: any;
 </script>
 
-<section class=" bg-red-300">
+<section class="">
 	<Title {title} />
 
 	{#each datas as data}
