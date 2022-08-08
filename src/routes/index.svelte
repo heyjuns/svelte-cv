@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>CV - Juanda Leonardo</title>
 	<meta name="Curriculum Vitae" content="Juanda Leonardo" />
 </svelte:head>
 
@@ -21,7 +21,7 @@
 	{#if data}
 		<Profile biodata={data.biodata} socialMedia={data.social_media} />
 
-		<section class="grid grid-cols-2 space-y-10 md:space-y-0 md:gap-16 mt-20">
+		<section class="grid md:grid-cols-2 space-y-10 md:space-y-0 md:gap-16 mt-20">
 			<Timeline title="WORKS" datas={data.works} />
 			<Timeline title="EDUCATION" datas={data.educations} />
 			<Timeline title="FREELANCE" datas={data.freelance} />
