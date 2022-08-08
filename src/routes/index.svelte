@@ -11,7 +11,7 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="Curriculum Vitae" content={data.biodata.name} />
+	<meta name="Curriculum Vitae" content="Juanda Leonardo" />
 </svelte:head>
 
 <section>
