@@ -3,7 +3,7 @@
 	export let socialMedia: any;
 </script>
 
-<section>
+<section class="md:mt-40 ">
 	<figure class="md:flex rounded-xl p-8 md:p-0 bg-white shadow-lg ">
 		<img
 			class="w-48 h-48 object-cover md:object-cover md:w-48 md:h-auto md:rounded-r-none md:rounded-l-xl :md rounded-full mx-auto"
@@ -23,12 +23,22 @@
 				</p>
 			</div>
 
-			<div class="flex flex-row space-x-4 justify-center">
-				{#each socialMedia as item}
-					<a href={item.url} target="_blank">
-						<img src="./{item.name}.svg" alt="icon" class="w-10 h-10" />
+			<div class="flex flex-col md:flex-row justify-center place-items-center space-x-0 md:space-x-4 space-y-2">
+				<div class="flex place-items-center flex-grow">
+					<a
+						href="mailto:{biodata.email}"
+						class="border  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center bg-gray-700 border-gray-700 text-white hover:bg-gray-600"
+					>
+						Reach me here
 					</a>
-				{/each}
+				</div>
+				<div class="flex flex-row space-x-4">
+					{#each socialMedia as item}
+						<a href={item.url} target="_blank">
+							<img src="./{item.name}.svg" alt="icon" class="w-[42px] h-[42px]" />
+						</a>
+					{/each}
+				</div>
 			</div>
 		</div>
 	</figure>

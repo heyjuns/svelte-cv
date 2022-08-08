@@ -6,7 +6,7 @@
 	export let datas: any;
 </script>
 
-<section>
+<section class="h-fit">
 	<Title {title} />
 
 	{#each datas as data}
