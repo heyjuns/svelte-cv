@@ -18,6 +18,15 @@
 				<p class="mb-4 font-normal text-slate-600 ">
 					{data.description}
 				</p>
+				<p class="text-sm font-light">
+					<span class="font-bold">Skills </span>:
+					{#each data.skills as skill, i}
+						{skill}
+						{#if i < data.skills.length - 1}
+							<span class="font-bold"> · </span>
+						{/if}
+					{/each}
+				</p>
 			</li>
 		{/each}
 	</ol>
