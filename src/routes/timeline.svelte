@@ -7,26 +7,32 @@
 <section>
 	<Title {title} />
 
-	<ol class="relative border-l border-slate-700 ">
+	<ol class="relative border-l border-slate-700">
 		{#each datas as data}
-			<li class="mb-10 ml-4">
+			<li class="space-y-4 ml-4">
 				<div class="absolute w-3 h-3 bg-slate-700 rounded-full mt-1.5 -left-1.5 border" />
-				<time class="mb-1 text-sm font-light leading-none text-slate-600 ">{data.duration}</time>
-				<h3 class="text-lg font-semibold text-slate-700">
-					{data.title}
-				</h3>
-				<p class="mb-4 font-normal text-slate-600 ">
-					{data.description}
-				</p>
-				<p class="text-sm font-light">
-					<span class="font-bold">Skills </span>:
-					{#each data.skills as skill, i}
-						{skill}
-						{#if i < data.skills.length - 1}
-							<span class="font-bold"> · </span>
-						{/if}
-					{/each}
-				</p>
+				<div class="space-y-1">
+					<time class="mb-1 text-sm font-light leading-none text-slate-600 ">{data.duration}</time>
+					<div>
+						<h3 class="text-lg font-semibold text-slate-700">
+							{data.title}
+						</h3>
+						<h4 class="leading-none font-semibold">{data.location}</h4>
+					</div>
+
+					<p class="mb-4 font-normal text-slate-600 ">
+						{data.description}
+					</p>
+					<p class="text-sm font-light">
+						<span class="font-bold">Skills </span>:
+						{#each data.skills as skill, i}
+							{skill}
+							{#if i < data.skills.length - 1}
+								<span class="font-bold"> · </span>
+							{/if}
+						{/each}
+					</p>
+				</div>
 			</li>
 		{/each}
 	</ol>

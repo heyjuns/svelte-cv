@@ -3,21 +3,21 @@
 	export let socialMedia: any;
 </script>
 
-<section class="md:mt-40 ">
+<section>
 	<figure class="md:flex rounded-xl p-8 md:p-0 bg-white shadow-lg ">
 		<img
 			class="w-48 h-48 object-cover md:object-cover md:w-48 md:h-auto md:rounded-r-none md:rounded-l-xl :md rounded-full mx-auto"
 			src="./avatar_edit.jpg"
 			alt=""
 		/>
-		<div class="pt-6 md:p-5 text-center md:text-left space-y-4 text-gray-600">
+		<div class="pt-6 md:p-5 text-center md:text-left space-y-4 text-slate-600">
 			<blockquote>
 				<p class="font-light">
 					{biodata.second_summary}
 				</p>
 			</blockquote>
 			<div>
-				<p class="font-bold text-2xl text-gray-700 leading-5 underline ">{biodata.name}</p>
+				<p class="font-bold text-2xl text-slate-700 leading-5 underline ">{biodata.name}</p>
 				<p class="">
 					{biodata.position}, {biodata.last_position}
 				</p>
@@ -29,7 +29,7 @@
 				<div class="flex place-items-center flex-grow">
 					<a
 						href="mailto:{biodata.email}"
-						class="border  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center bg-gray-700 border-gray-700 text-white hover:bg-gray-600"
+						class="border  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center bg-slate-700 border-slate-700 text-white hover:bg-slate-600"
 					>
 						Reach me here
 					</a>
@@ -45,6 +45,3 @@
 		</div>
 	</figure>
 </section>
-
-<style>
-</style>

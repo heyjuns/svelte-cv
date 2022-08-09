@@ -2,9 +2,9 @@
 role="status"
 class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 md:flex md:items-center"
 >
-<div class="flex justify-center items-center w-full h-48 bg-gray-700 rounded sm:w-96">
+<div class="flex justify-center items-center w-full h-48 bg-slate-700 rounded sm:w-96">
   <svg
-    class="w-12 h-12 text-gray-200"
+    class="w-12 h-12 text-slate-200"
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     fill="currentColor"
@@ -15,12 +15,12 @@ class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 md:flex md:items-center
   >
 </div>
 <div class="w-full">
-  <div class="h-2.5 bg-gray-700 rounded-full w-48 mb-4" />
-  <div class="h-2 bg-gray-700 rounded-full max-w-[480px] mb-2.5" />
-  <div class="h-2 bg-gray-700 rounded-full mb-2.5" />
-  <div class="h-2 bg-gray-700 rounded-full max-w-[440px] mb-2.5" />
-  <div class="h-2 bg-gray-700 rounded-full max-w-[460px] mb-2.5" />
-  <div class="h-2 bg-gray-700 rounded-full max-w-[360px]" />
+  <div class="h-2.5 bg-slate-700 rounded-full w-48 mb-4" />
+  <div class="h-2 bg-slate-700 rounded-full max-w-[480px] mb-2.5" />
+  <div class="h-2 bg-slate-700 rounded-full mb-2.5" />
+  <div class="h-2 bg-slate-700 rounded-full max-w-[440px] mb-2.5" />
+  <div class="h-2 bg-slate-700 rounded-full max-w-[460px] mb-2.5" />
+  <div class="h-2 bg-slate-700 rounded-full max-w-[360px]" />
 </div>
 <span class="sr-only">Loading...</span>
 </div>

@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Border from './border.svelte';
-	import Datalist from './datalist.svelte';
+import Datalist from './datalist.svelte';
 	import Profile from './profile.svelte';
-import Skeleton from './skeleton.svelte';
+	import Skeleton from './skeleton.svelte';
 	import Skills from './skills.svelte';
 	import Timeline from './timeline.svelte';
 
@@ -19,28 +18,25 @@ import Skeleton from './skeleton.svelte';
 	<meta name="Curriculum Vitae" content="Juanda Leonardo" />
 </svelte:head>
 
-<section class="space-y-20">
+<section>
 	{#if data}
-		<Profile biodata={data.biodata} socialMedia={data.social_media} />
+		<section class="mb-10 md:mt-10">
+			<Profile biodata={data.biodata} socialMedia={data.social_media} />
+		</section>
 
-		<section class="md:columns-2 md:space-y-0 md:gap-10">
-			<Timeline title="WORKS" datas={data.works} />
-			<Timeline title="EDUCATION" datas={data.educations} />
-			<Timeline title="FREELANCE" datas={data.freelance} />
-
-			<!-- <Datalist title="WORKS" datas={data.works} />
-			<Datalist title="EDUCATION" datas={data.educations} />
-			<Datalist title="FREELANCE" datas={data.freelance} /> -->
-
-			<div class="space-y-10 md:space-y-4">
+		<section class="grid md:grid-cols-2 md:gap-16 space-y-8">
+			<div class="space-y-8">
+				<Timeline title="WORKS" datas={data.works} />
+				<Timeline title="FREELANCE" datas={data.freelance} />
+			</div>
+			<div class="space-y-8">
+				<Timeline title="EDUCATION" datas={data.educations} />
+        <Datalist title="CERTIFICATIONS" datas={data.certificates} />
 				<Skills title="TECH SKILLS" skills={data.tech_skills} />
-				<Border />
 				<Skills title="SOFT SKILLS" skills={data.soft_skills} />
 			</div>
 		</section>
 	{:else}
-    <Skeleton/>
+		<Skeleton />
 	{/if}
 </section>
-
-
