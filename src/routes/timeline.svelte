@@ -4,7 +4,7 @@
 	export let datas: any;
 </script>
 
-<section class="">
+<section>
 	<Title {title} />
 
 	<ol class="relative border-l border-slate-700 ">

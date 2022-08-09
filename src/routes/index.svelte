@@ -23,7 +23,7 @@ import Skeleton from './skeleton.svelte';
 	{#if data}
 		<Profile biodata={data.biodata} socialMedia={data.social_media} />
 
-		<section class="grid md:grid-cols-2 md:space-y-0 md:gap-10">
+		<section class="md:columns-2 md:space-y-0 md:gap-10">
 			<Timeline title="WORKS" datas={data.works} />
 			<Timeline title="EDUCATION" datas={data.educations} />
 			<Timeline title="FREELANCE" datas={data.freelance} />
