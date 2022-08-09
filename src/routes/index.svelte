@@ -14,8 +14,9 @@ import Datalist from './datalist.svelte';
 </script>
 
 <svelte:head>
-	<title>CV - Juanda Leonardo</title>
-	<meta name="Curriculum Vitae" content="Juanda Leonardo" />
+	<title>Juanda Leonardo</title>
+	<meta name="Summary" content="Juanda Leonardo" />
+  <meta name="Description" content="Have worked as a Professional Frontend Engineer for approximately 4 years in various fields. Read more..."/>
 </svelte:head>
 
 <section>

@@ -8,7 +8,9 @@
 		<img
 			class="w-48 h-48 object-cover md:object-cover md:w-48 md:h-auto md:rounded-r-none md:rounded-l-xl :md rounded-full mx-auto"
 			src="./avatar_edit.webp"
-			alt=""
+			alt="avatar"
+      width="2149"
+      height="2686"
 		/>
 		<div class="pt-6 md:p-5 text-center md:text-left space-y-4 text-slate-600">
 			<blockquote>

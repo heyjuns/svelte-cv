@@ -14,10 +14,10 @@
 				<div class="space-y-1">
 					<time class="mb-1 text-sm font-light leading-none text-slate-600 ">{data.duration}</time>
 					<div>
-						<h3 class="text-lg font-semibold text-slate-700">
+						<h1 class="text-lg font-semibold text-slate-700">
 							{data.title}
-						</h3>
-						<h4 class="leading-none font-semibold">{data.location}</h4>
+						</h1>
+						<h2 class="leading-none font-semibold">{data.location}</h2>
 					</div>
 
 					<p class="mb-4 font-normal text-slate-600 ">
